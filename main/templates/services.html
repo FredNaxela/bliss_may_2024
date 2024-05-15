@@ -1,0 +1,22 @@
+<div id=services class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage text_align_center ">
+                    <h2>Our Massage Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in services %}
+            <div class="col-md-4">
+                <div id="ho_shad" class="services_box text_align_left">
+                    <h3>{{ item.name }}</h3>
+                    <figure><img src="{{ item.image.url }}" alt="{{ item.title }}"/></figure>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

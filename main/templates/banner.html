@@ -1,0 +1,53 @@
+<div class="slider_main">
+    <div id="banner1" class="carousel slide">
+        <ol class="carousel-indicators">
+            {% for slide in slides %}
+                <li data-target="#banner1" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}
+                    class="active" {% endif %}></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner">
+            {% for item in banner %}
+                <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <div class="row d_flex">
+                                <div class="col-md-5">
+                                    <div class="creative">
+                                        <h1>Spa <br>Center </h1>
+                                        <p>{{ item.description }}</p>
+                                        <a class="read_more" href="#session">Book a session</a>
+                                        <a class="read_more" href="#contact">Contact us</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row mar_right">
+                                        <div class="col-md-6">
+                                            <div class="agency">
+                                                <figure><img src="{{ item.image1.url }}" alt="#"/></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="agency">
+                                                <figure><img src="{{ item.image2.url }}" alt="#"/></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <!-- controls -->
+        <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

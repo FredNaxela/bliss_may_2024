@@ -1,0 +1,53 @@
+<div class="customers">
+    <div class="clients_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="titlepage text_align_center">
+                        <h2>Customer reviews</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start slider section -->
+    <div id="myCarousel" class="carousel slide clients_banner" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {% for item in reviews %}
+                <li data-target="#myCarousel" data-slide-to="{{ forloop.counter0 }}"
+                    {% if forloop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner">
+            {% for item in reviews %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <div class="row d_flex">
+                                <div class="col-md-2 col-sm-8">
+                                    <div class="pro_file">
+                                        <i><img src="{{ item.image.url }}" alt="#"/></i>
+                                        <h4>{{ item.name }}</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="test_box text_align_left">
+                                        <p>{{ item.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div id=prices class="priceing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage text_align_center">
+                    <h2>Our Prices</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="row">
+                    {% for item in price %}
+                    <div class="col-md-6">
+                        <div class="our_priceing text_align_center">
+                            <div class="our_pri">
+                                <h3>{{ item.name }}</h3>
+                                <span>$<strong>{{ item.price }}</strong></span>
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom: 30px;"></div>
