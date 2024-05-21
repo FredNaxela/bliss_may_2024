@@ -89,3 +89,25 @@ class Reviews(models.Model):
         verbose_name = 'Відгук'
         verbose_name_plural = 'Відгуки'
         ordering = ['sort']
+
+
+class Contact(models.Model):
+    phone_regex = RegexValidator(regex=r'^\+?(380)?\d{9,15}$',
+                                 message="Number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+
+    name = models.CharField(max_length=255)
+    phone = models.CharField(validators=[phone_regex], max_length=15)
+    email = models.EmailField()
+    message = models.TextField()
+
+    is_confirmed = models.BooleanField(default=False)
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакти'
+        ordering = ['-date_created']

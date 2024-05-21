@@ -1,9 +1,13 @@
 from django.contrib import admin
-from .models import Banner, Services, About, Price, Reviews, Blog
+from .models import Banner, Services, About, Price, Reviews, Blog, Contact
 from django.utils.safestring import mark_safe
 
 
 # Register your models here.
+
+admin.site.register(Contact)
+
+
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
     list_display = ('image_src_tag1', 'image_src_tag2', 'description', 'sort')

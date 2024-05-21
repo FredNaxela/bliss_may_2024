@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Banner, Services, About, Price, Reviews, Blog
-# from .forms import ContactForm
+from .forms import ContactForm
 from django.views.generic import TemplateView
 
 
@@ -26,3 +26,14 @@ class IndexView(TemplateView):
         context['reviews'] = reviews
 
         return context
+
+    def post(self, request, *args, **kwargs):
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message was sent successfully!')
+            return redirect('main:index')
+        else:
+            context = self.get_context_data()
+            context['form'] = form
+            return self.render_to_response(context)

@@ -1,9 +1,9 @@
 <div class="slider_main">
     <div id="banner1" class="carousel slide">
         <ol class="carousel-indicators">
-            {% for slide in slides %}
-                <li data-target="#banner1" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}
-                    class="active" {% endif %}></li>
+            {% for item in banner %}
+                <li data-target="#banner1" data-slide-to="{{ forloop.index0 }}"
+                        {% if forloop.first %} class="active" {% endif %}></li>
             {% endfor %}
         </ol>
         <div class="carousel-inner">

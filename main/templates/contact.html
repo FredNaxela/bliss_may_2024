@@ -8,23 +8,29 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <form id="request" class="main_form">
+
+                {% include 'includes/messages.html' %}
+
+                <form id="request" class="main_form" method="post">
+                    {% csrf_token %}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form_control" placeholder="Your name" type="text" name="Name">
+                                {{ form.name }}
+                                <small class="form-text text-danger">{{ form.name.errors }}</small>
                             </div>
                             <div class="form-group">
-                                <input class="form_control" placeholder="Email" type="email" name="Email">
+                                {{ form.email }}
+                                <small class="form-text text-danger">{{ form.phone.errors }}</small>
                             </div>
                             <div class="form-group">
-                                <input class="form_control" placeholder="Phone Number" type="tel" name="Phone Number">
+                                {{ form.phone }}
+                                <small class="form-text text-danger">{{ form.email.errors }}</small>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="textarea" placeholder="Message" name="message"
-                                          style="height: 240px;"></textarea>
+                                {{ form.message }}
                             </div>
                         </div>
                         <div class="col-md-12">
