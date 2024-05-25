@@ -10,8 +10,8 @@ class Banner(models.Model):
     sort = models.PositiveSmallIntegerField()
 
     class Meta:
-        verbose_name = 'Баннер'
-        verbose_name_plural = 'Баннери'
+        verbose_name = 'Banner'
+        verbose_name_plural = '7.Banner'
         ordering = ['sort']
 
 
@@ -25,8 +25,8 @@ class Services(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Послуга'
-        verbose_name_plural = 'Послуги'
+        verbose_name = 'Service'
+        verbose_name_plural = '6.Services'
         ordering = ['sort']
 
 
@@ -40,8 +40,8 @@ class Price(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Ціна'
-        verbose_name_plural = 'Ціни'
+        verbose_name = 'Price'
+        verbose_name_plural = '5.Price'
         ordering = ['sort']
 
 
@@ -56,8 +56,8 @@ class Blog(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Блог'
-        verbose_name_plural = 'Блоги'
+        verbose_name = 'Blog'
+        verbose_name_plural = '3.Blog'
         ordering = ['sort']
 
 
@@ -71,8 +71,8 @@ class About(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Про нас'
-        verbose_name_plural = 'Про нас'
+        verbose_name = 'About'
+        verbose_name_plural = '8.About'
         ordering = ['sort']
 
 
@@ -86,8 +86,8 @@ class Reviews(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Відгук'
-        verbose_name_plural = 'Відгуки'
+        verbose_name = 'Review'
+        verbose_name_plural = '4.Reviews'
         ordering = ['sort']
 
 
@@ -108,6 +108,32 @@ class Contact(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Контакт'
-        verbose_name_plural = 'Контакти'
+        verbose_name = 'Contact'
+        verbose_name_plural = '2.Contacts'
+        ordering = ['-date_created']
+
+
+class Session(models.Model):
+    phone_regex = RegexValidator(regex=r'^\+?(380)?\d{9,15}$',
+                                 message="Number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+
+    name = models.CharField(max_length=255)
+    phone = models.CharField(validators=[phone_regex], max_length=15)
+    email = models.EmailField()
+    procedure = models.CharField(max_length=255)
+    date = models.DateField()
+    time = models.TimeField()
+    message = models.TextField(blank=True, null=True)
+
+    is_confirmed = models.BooleanField(default=False)
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        formatted_time = self.time.strftime('%H:%M')
+        return f'{self.name}, {self.procedure} - {self.date} {formatted_time}'
+
+    class Meta:
+        verbose_name = 'Session'
+        verbose_name_plural = '1.Sessions'
         ordering = ['-date_created']
