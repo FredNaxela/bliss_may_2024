@@ -1,0 +1,1906 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-05-12T13:31:36.081Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "About Our Center",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-05-12T13:39:14.959Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "About Our Center",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-05-12T13:39:53.865Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-05-12T14:00:33.771Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-05-12T14:04:53.737Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-05-12T14:39:02.515Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-05-12T14:44:35.585Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Ayurveda Spa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-05-12T14:44:55.880Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Massage Spa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-05-12T14:45:17.327Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Luxury Spa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-05-12T14:50:30.584Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-05-12T14:51:01.083Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-05-12T14:51:45.738Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-05-12T14:51:50.444Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-05-12T14:55:09.603Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Quis Nostrud",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-05-12T14:55:38.301Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Veniam",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-05-12T14:56:24.391Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Tempor incididunt",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-05-12T14:56:45.649Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Quis Nostrud",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-05-12T14:56:51.398Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Veniam",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-05-12T15:07:34.531Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "John Doe",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-05-12T15:07:50.505Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Lara Fabian",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-05-12T15:08:08.948Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Ben White",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-05-14T22:01:10.300Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Ayurveda Spa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-05-14T22:01:52.800Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Ayurveda Spa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-05-14T22:01:59.395Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Massage Spa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-05-14T22:02:05.651Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Luxury Spa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-05-14T22:06:30.490Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-05-14T22:08:33.085Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-05-14T22:09:48.755Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-05-14T22:09:55.635Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-05-14T22:10:14.126Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-05-14T22:10:19.268Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-05-14T22:10:46.869Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Quis Nostrud",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-05-14T22:11:34.831Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Quis Nostrud",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-05-14T22:11:40.101Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Veniam",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-05-14T22:11:44.958Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Tempor incididunt",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-05-14T22:12:24.218Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Regular Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-05-14T22:12:30.794Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Special Price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-05-14T22:41:27.562Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "aasdasd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-05-14T22:45:36.945Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-05-14T22:45:55.233Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-05-14T22:46:01.877Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-05-14T22:46:47.304Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-05-14T22:46:52.590Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-05-14T23:13:11.572Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-05-14T23:14:12.026Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-05-15T11:01:55.704Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-05-15T11:02:58.848Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-05-15T11:29:58.396Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Banner object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-05-15T11:30:20.654Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Banner object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-05-15T12:09:46.959Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-05-15T21:02:16.311Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-05-15T22:16:27.498Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "About Our Center",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-05-15T22:16:31.953Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Sort\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-05-15T22:18:21.789Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-05-15T22:18:56.763Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-05-15T22:19:48.024Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-05-16T12:06:16.908Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-05-16T12:06:42.709Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "123123213 1232",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-05-16T12:06:58.260Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "123123213 1232",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-05-16T12:32:25.476Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-05-16T12:32:34.889Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "123123213 1232",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-05-16T12:36:32.215Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "123123213 1232",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-05-16T12:36:37.271Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "About Our Center",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Про нас",
+        "content_type": 7,
+        "codename": "add_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Про нас",
+        "content_type": 7,
+        "codename": "change_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Про нас",
+        "content_type": 7,
+        "codename": "delete_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Про нас",
+        "content_type": 7,
+        "codename": "view_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add Блог",
+        "content_type": 8,
+        "codename": "add_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change Блог",
+        "content_type": 8,
+        "codename": "change_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete Блог",
+        "content_type": 8,
+        "codename": "delete_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view Блог",
+        "content_type": 8,
+        "codename": "view_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Ціна",
+        "content_type": 9,
+        "codename": "add_price"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Ціна",
+        "content_type": 9,
+        "codename": "change_price"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Ціна",
+        "content_type": 9,
+        "codename": "delete_price"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Ціна",
+        "content_type": 9,
+        "codename": "view_price"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add Відгук",
+        "content_type": 10,
+        "codename": "add_reviews"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change Відгук",
+        "content_type": 10,
+        "codename": "change_reviews"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete Відгук",
+        "content_type": 10,
+        "codename": "delete_reviews"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view Відгук",
+        "content_type": 10,
+        "codename": "view_reviews"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add Послуга",
+        "content_type": 11,
+        "codename": "add_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change Послуга",
+        "content_type": 11,
+        "codename": "change_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete Послуга",
+        "content_type": 11,
+        "codename": "delete_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view Послуга",
+        "content_type": 11,
+        "codename": "view_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add Баннер",
+        "content_type": 12,
+        "codename": "add_banner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change Баннер",
+        "content_type": 12,
+        "codename": "change_banner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete Баннер",
+        "content_type": 12,
+        "codename": "delete_banner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view Баннер",
+        "content_type": 12,
+        "codename": "view_banner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add Контакт",
+        "content_type": 13,
+        "codename": "add_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change Контакт",
+        "content_type": 13,
+        "codename": "change_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete Контакт",
+        "content_type": 13,
+        "codename": "delete_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view Контакт",
+        "content_type": 13,
+        "codename": "view_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add Сеанс",
+        "content_type": 14,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change Сеанс",
+        "content_type": 14,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete Сеанс",
+        "content_type": 14,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view Сеанс",
+        "content_type": 14,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$4bb2J07OPDRrH27UshICHW$nMbTKr0hHz7LtHvXv0Qsfp22Igd9GZfAtBh5QHla07g=",
+        "last_login": "2024-05-25T10:58:03.687Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-05-12T12:59:42.620Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$5uQEqj5NLnZb5ILBHmPMQb$Lcog5WuzVwnB1lt86oNqNuCKhX7UH5/AGquv7wdWYv4=",
+        "last_login": "2024-05-25T10:28:49.729Z",
+        "is_superuser": false,
+        "username": "123",
+        "first_name": "",
+        "last_name": "",
+        "email": "123@gmail.con",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-24T07:48:24.883Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$Sg9p9x0Du388ubAHVW1Ohu$JSAYRHwcfSwi1uSD3fb7ETx9Cho7ErI/+Tc+/gb2U1A=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Al123",
+        "first_name": "",
+        "last_name": "",
+        "email": "Asda@gmal.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-24T08:14:51.046Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "main",
+        "model": "about"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "main",
+        "model": "blog"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "main",
+        "model": "price"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "main",
+        "model": "reviews"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "main",
+        "model": "services"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "main",
+        "model": "banner"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "main",
+        "model": "contact"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "main",
+        "model": "session"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 1,
+    "fields": {
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint cillum dolore eu fugiat nulla pariatur reprehenderit in voluptate velit.",
+        "image1": "banner/img1.png",
+        "image2": "banner/img2.png",
+        "sort": 1
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 2,
+    "fields": {
+        "description": "Excepteur sint cillum dolore eu fugiat nulla pariatur reprehenderit in voluptate velit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "image1": "banner/img2_VyqHLvV.png",
+        "image2": "banner/img1_X7KR8be.png",
+        "sort": 2
+    }
+},
+{
+    "model": "main.services",
+    "pk": 1,
+    "fields": {
+        "name": "Ayurveda Spa",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "image": "services/service1.jpg",
+        "sort": 1
+    }
+},
+{
+    "model": "main.services",
+    "pk": 2,
+    "fields": {
+        "name": "Massage Spa",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "image": "services/service2.jpg",
+        "sort": 2
+    }
+},
+{
+    "model": "main.services",
+    "pk": 3,
+    "fields": {
+        "name": "Luxury Spa",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "image": "services/service3.jpg",
+        "sort": 3
+    }
+},
+{
+    "model": "main.price",
+    "pk": 1,
+    "fields": {
+        "name": "Regular Price",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum is not simply random text.",
+        "price": 100,
+        "sort": 1
+    }
+},
+{
+    "model": "main.price",
+    "pk": 2,
+    "fields": {
+        "name": "Special Price",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum is not simply random text.",
+        "price": 50,
+        "sort": 2
+    }
+},
+{
+    "model": "main.blog",
+    "pk": 2,
+    "fields": {
+        "name": "Quis Nostrud",
+        "date": "18 June",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ncididunt ut dolore magna labore.",
+        "image": "blog/blog1_Nd7LtlA.jpg",
+        "sort": 1
+    }
+},
+{
+    "model": "main.blog",
+    "pk": 3,
+    "fields": {
+        "name": "Veniam",
+        "date": "11 June",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ncididunt ut dolore magna labore.",
+        "image": "blog/blog2.jpg",
+        "sort": 2
+    }
+},
+{
+    "model": "main.blog",
+    "pk": 4,
+    "fields": {
+        "name": "Tempor incididunt",
+        "date": "2 June",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ncididunt ut dolore magna labore.",
+        "image": "blog/blog3.jpg",
+        "sort": 3
+    }
+},
+{
+    "model": "main.about",
+    "pk": 3,
+    "fields": {
+        "name": "About Our Center",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip aboris nisi ut aliquipsed do eiusmod tempor incididunt. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip aboris nisi ut aliquipsed do eiusmod tempor incididunt. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "about/about_img_wrEHCXu.jpg",
+        "sort": 1
+    }
+},
+{
+    "model": "main.reviews",
+    "pk": 1,
+    "fields": {
+        "name": "John Doe",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going",
+        "image": "reviews/test1.png",
+        "sort": 1
+    }
+},
+{
+    "model": "main.reviews",
+    "pk": 2,
+    "fields": {
+        "name": "Lara Fabian",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going",
+        "image": "reviews/test2.png",
+        "sort": 2
+    }
+},
+{
+    "model": "main.reviews",
+    "pk": 3,
+    "fields": {
+        "name": "Ben White",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going",
+        "image": "reviews/test3.png",
+        "sort": 3
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 1,
+    "fields": {
+        "name": "ASdaxa",
+        "phone": "+380919191919",
+        "email": "asd@gmail.com",
+        "message": "124312412",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T12:57:41.966Z",
+        "date_updated": "2024-05-21T12:57:41.966Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 2,
+    "fields": {
+        "name": "alala",
+        "phone": "+301293409124",
+        "email": "asd@gmail.com",
+        "message": "afdasfas",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T13:17:06.482Z",
+        "date_updated": "2024-05-21T13:17:06.482Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 3,
+    "fields": {
+        "name": "121232",
+        "phone": "12313123123",
+        "email": "asdAS@email.com",
+        "message": "123213",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T13:25:45.151Z",
+        "date_updated": "2024-05-21T13:25:45.151Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 4,
+    "fields": {
+        "name": "211312a",
+        "phone": "+12312321321",
+        "email": "asd@gmai.com",
+        "message": "123123",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T13:29:00.101Z",
+        "date_updated": "2024-05-21T13:29:00.101Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 5,
+    "fields": {
+        "name": "AD",
+        "phone": "+38091293123",
+        "email": "asd@g.com",
+        "message": "123123123",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T13:51:57.166Z",
+        "date_updated": "2024-05-21T13:51:57.166Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 6,
+    "fields": {
+        "name": "NAme",
+        "phone": "+2124124124124",
+        "email": "asd@eman.com",
+        "message": "124124124",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T14:06:52.884Z",
+        "date_updated": "2024-05-21T14:06:52.884Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 7,
+    "fields": {
+        "name": "Name123",
+        "phone": "+3809123123",
+        "email": "asdasd@gmai.com",
+        "message": "123123123",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T14:10:41.153Z",
+        "date_updated": "2024-05-21T14:10:41.153Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 8,
+    "fields": {
+        "name": "adad",
+        "phone": "+2123123123",
+        "email": "asd@gmail.com",
+        "message": "1321312312",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T14:31:42.779Z",
+        "date_updated": "2024-05-21T14:31:42.779Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 9,
+    "fields": {
+        "name": "фывф",
+        "phone": "+314124124",
+        "email": "asdasd@gmail.co",
+        "message": "asdas",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T14:35:29.482Z",
+        "date_updated": "2024-05-21T14:35:29.482Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 10,
+    "fields": {
+        "name": "123123",
+        "phone": "+124124124",
+        "email": "ad@gma.com",
+        "message": "sdfdsf",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T15:40:36.435Z",
+        "date_updated": "2024-05-21T15:40:36.436Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 11,
+    "fields": {
+        "name": "asdas",
+        "phone": "+214214124",
+        "email": "asd@cm.com",
+        "message": "qwdasdsad",
+        "is_confirmed": false,
+        "date_created": "2024-05-21T15:46:36.576Z",
+        "date_updated": "2024-05-21T15:46:36.577Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 12,
+    "fields": {
+        "name": "adasd",
+        "phone": "+39001010101",
+        "email": "asd@gmail.com",
+        "message": "dads",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:07:08.526Z",
+        "date_updated": "2024-05-22T10:07:08.526Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 13,
+    "fields": {
+        "name": "asfas",
+        "phone": "+124142342354",
+        "email": "asf@com.ua",
+        "message": "afasfasf",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:12:14.940Z",
+        "date_updated": "2024-05-22T10:12:14.940Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 14,
+    "fields": {
+        "name": "фывфы",
+        "phone": "+234324324",
+        "email": "asd@com.as",
+        "message": "dasdasd",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:22:53.523Z",
+        "date_updated": "2024-05-22T10:22:53.523Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 15,
+    "fields": {
+        "name": "Akex",
+        "phone": "+234325324",
+        "email": "apa@gmail.com",
+        "message": "Hello",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:58:31.726Z",
+        "date_updated": "2024-05-22T10:58:31.726Z"
+    }
+},
+{
+    "model": "main.contact",
+    "pk": 16,
+    "fields": {
+        "name": "NAme",
+        "phone": "+42342354325",
+        "email": "asd@gs.com",
+        "message": "123",
+        "is_confirmed": false,
+        "date_created": "2024-05-25T10:57:02.125Z",
+        "date_updated": "2024-05-25T10:57:02.125Z"
+    }
+},
+{
+    "model": "main.session",
+    "pk": 1,
+    "fields": {
+        "name": "asdsad",
+        "phone": "+124124124214",
+        "email": "asd@com.ua",
+        "procedure": "dasdasd",
+        "date": "2024-04-30",
+        "time": "12:00:00",
+        "message": "afsfsdf",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:13:30.090Z",
+        "date_updated": "2024-05-22T10:13:30.090Z"
+    }
+},
+{
+    "model": "main.session",
+    "pk": 2,
+    "fields": {
+        "name": "asdasd",
+        "phone": "+12412412421",
+        "email": "as@co.com",
+        "procedure": "dasdasd",
+        "date": "2024-04-30",
+        "time": "12:00:00",
+        "message": "asdasdasd",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:23:32.409Z",
+        "date_updated": "2024-05-22T10:23:32.409Z"
+    }
+},
+{
+    "model": "main.session",
+    "pk": 3,
+    "fields": {
+        "name": "Alex",
+        "phone": "+30911121212",
+        "email": "fap@com.ua",
+        "procedure": "Spa",
+        "date": "2024-05-15",
+        "time": "15:00:00",
+        "message": "",
+        "is_confirmed": false,
+        "date_created": "2024-05-22T10:43:24.996Z",
+        "date_updated": "2024-05-22T10:43:24.996Z"
+    }
+},
+{
+    "model": "main.session",
+    "pk": 4,
+    "fields": {
+        "name": "Alaala",
+        "phone": "+4123423412",
+        "email": "asd@gmai.com",
+        "procedure": "Spa",
+        "date": "2024-05-31",
+        "time": "12:00:00",
+        "message": "",
+        "is_confirmed": false,
+        "date_created": "2024-05-25T10:57:49.881Z",
+        "date_updated": "2024-05-25T10:57:49.881Z"
+    }
+}
+]

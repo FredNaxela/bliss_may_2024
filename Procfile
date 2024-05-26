@@ -1,0 +1,1 @@
+web: gunicorn bliss_may_2024.wsgi --log-file - --log-level debug
