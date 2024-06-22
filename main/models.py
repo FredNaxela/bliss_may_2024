@@ -20,6 +20,7 @@ class Services(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='services/', blank=True, null=True)
     sort = models.PositiveSmallIntegerField()
+    category = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name

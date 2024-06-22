@@ -42,6 +42,17 @@ class ContactForm(forms.ModelForm):
 
 
 class SessionForm(forms.ModelForm):
+    MASSAGE_SPA_CHOICES = [
+        ('massage', 'Massage'),
+        ('spa', 'Spa'),
+        ('massage_and_spa', 'Massage & Spa')
+    ]
+
+    procedure = forms.ChoiceField(
+        choices=MASSAGE_SPA_CHOICES,
+        widget=forms.Select(attrs={'class': 'form-control', 'placeholder': 'Select Procedure'}),
+    )
+
     class Meta:
         model = Session
         fields = ['name', 'phone', 'email', 'procedure', 'date', 'time', 'message']
@@ -49,7 +60,6 @@ class SessionForm(forms.ModelForm):
             'name': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Your name'}),
             'email': forms.EmailInput(attrs={'class': 'form_control', 'placeholder': 'Email'}),
             'phone': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Phone Number'}),
-            'procedure': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Select Massage spa'}),
             'time': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Time'}),
             'date': forms.TextInput(attrs={'class': 'form_control', 'id': 'my_date_picker',
                                            'placeholder': 'Select Date'}),

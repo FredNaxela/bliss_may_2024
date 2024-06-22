@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Banner, Services, About, Price, Reviews, Blog
+from .models import Banner, Services, About, Price, Reviews, Blog, Session
 from .forms import ContactForm, SessionForm
 from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
 # Create your views here.
@@ -11,14 +13,26 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        if self.request.user.is_authenticated:
+            user = self.request.user
+            initial_data = {
+                'name': user.fullname,
+                'phone': user.phone,
+                'email': user.email,
+            }
+            session_form = SessionForm(initial=initial_data)
+            contact_form = ContactForm(initial=initial_data)
+        else:
+            session_form = SessionForm()
+            contact_form = ContactForm()
+
         banner = Banner.objects.all()
         services = Services.objects.all()
         price = Price.objects.all()
         blog = Blog.objects.all()
         about = About.objects.all()
         reviews = Reviews.objects.all()
-        contact_form = ContactForm()
-        session_form = SessionForm()
 
         context['banner'] = banner
         context['services'] = services

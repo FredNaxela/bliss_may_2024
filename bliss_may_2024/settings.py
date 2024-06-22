@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
 DATABASES_URL = os.environ.get('DATABASES_URL')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['os.environ.get("ALLOWED_HOSTS")', '*']
 
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "main.apps.MainConfig",
-    "account.apps.AccountConfig"
+    "account.apps.AccountConfig",
 ]
 
 MIDDLEWARE = [
@@ -123,6 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'account.CustomUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

@@ -1,38 +1,38 @@
-<div id=session class="appointment">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 ">
-                <div class="titlepage text_align_center">
-                    <h2>Book a session</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+    <div id=session class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="titlepage text_align_center">
+                        <h2>Book a session</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12">
+                <div class="col-md-12">
 
-                {% include 'includes/messages.html' with form_type="session" %}
+                    {% include 'includes/messages.html' with form_type="session" %}
 
-                <form id="request" class="main_form" method="post">
-                    {% csrf_token %}
-                    <div class="row">
-                        {% for field in session_form %}
-                            {% if field.name != 'message' %}
-                                <div class="col-md-6">
-                                    {{ field }}
-                                    <small class="form-text text-danger">{{ field.errors }}</small>
+                    <form id="request" class="main_form" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            {% for field in session_form %}
+                                {% if field.name != 'message' %}
+                                    <div class="col-md-6">
+                                        {{ field }}
+                                        <small class="form-text text-danger">{{ field.errors }}</small>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    {{ session_form.message }}
                                 </div>
-                            {% endif %}
-                        {% endfor %}
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                {{ session_form.message }}
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" name="submit_session_form" class="send_btn">Book Now</button>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <button type="submit" name="submit_session_form" class="send_btn">Book Now</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>

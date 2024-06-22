@@ -4,6 +4,7 @@ from django.contrib.auth import logout
 from django.views.generic import CreateView
 from .forms import RegistrationForm
 from django.contrib.auth.decorators import login_required
+from .forms import UserProfileForm
 
 
 class RegistrationView(CreateView):
@@ -29,5 +30,23 @@ def profile_view(request):
     user = request.user
     context = {
         'user': user,
+    }
+    return render(request, 'profile.html', context)
+
+
+@login_required
+def profile_view(request):
+    user = request.user
+    if request.method == 'POST':
+        form = UserProfileForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = UserProfileForm(instance=user)
+
+    context = {
+        'user': user,
+        'form': form,
     }
     return render(request, 'profile.html', context)

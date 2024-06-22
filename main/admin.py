@@ -8,6 +8,7 @@ from django.utils.safestring import mark_safe
 admin.site.register(Contact)
 admin.site.register(Session)
 
+
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
     list_display = ('image_src_tag1', 'image_src_tag2', 'description', 'sort')
@@ -25,7 +26,7 @@ class BannerAdmin(admin.ModelAdmin):
 
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
-    list_display = ('image_src_tag', 'name', 'description', 'sort')
+    list_display = ('image_src_tag', 'name', 'description', 'category', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
     list_filter = ('sort',)

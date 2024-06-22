@@ -1,7 +1,9 @@
 from django import forms
-from django.contrib.auth.models import User
+from .models import CustomUser
 from django.core.validators import RegexValidator
 from django.contrib.auth import authenticate
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):
@@ -32,14 +34,13 @@ class LoginForm(forms.Form):
         return cleaned_data
 
 
-class RegistrationForm(forms.ModelForm):
+class RegistrationForm(UserCreationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Username'}))
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form_control', 'placeholder': 'Password'}),
                                 label="Password")
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form_control',
                                                                   'placeholder': 'Confirm Password'}), label="Password")
-    name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Full Name'}),
-                           label="Full Name")
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form_control', 'placeholder': 'Email'}))
     phone = forms.CharField(widget=forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Phone Number'}),
                             validators=[
                                 RegexValidator(
@@ -47,13 +48,13 @@ class RegistrationForm(forms.ModelForm):
                                     message="Phone number must be entered in the format: '+999999999'."
                                             " Up to 15 digits allowed."
                                 )
-                            ]
-                            )
-    email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form_control', 'placeholder': 'Email'}))
+                            ])
+    fullname = forms.CharField(widget=forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Full Name'}),
+                               label="Full Name")
 
-    class Meta:
-        model = User
-        fields = ['username', 'password1', 'password2', 'name', 'phone', 'email']
+    class Meta(UserCreationForm.Meta):
+        model = CustomUser
+        fields = ['username', 'email', 'phone', 'fullname', 'password1', 'password2']
 
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
@@ -68,3 +69,9 @@ class RegistrationForm(forms.ModelForm):
         if commit:
             user.save()
         return user
+
+
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = CustomUser
+        fields = ['fullname', 'phone', 'email']
