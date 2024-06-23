@@ -1,23 +1,52 @@
+{% load i18n %}
 <div class="col-md-9 col-sm-9">
     <div class="navbar-area">
         <nav class="site-navbar">
             <ul>
-                <li><a href="{% url 'main:index' %}#services">Services</a></li>
-                <li><a href="{% url 'main:index' %}#prices">Price</a></li>
-                <li><a href="{% url 'main:index' %}#about-anchor">About</a></li>
-                <li><a href="{% url 'main:index' %}#blog">Blog</a></li>
-                <li><a href="{% url 'main:index' %}#contact-anchor">Contact</a></li>
+                <li><a href="{% url 'main:index' %}#services">{% trans 'Services' %}</a></li>
+                <li><a href="{% url 'main:index' %}#prices">{% trans 'Price' %}</a></li>
+                <li><a href="{% url 'main:index' %}#about-anchor">{% trans 'About' %}</a></li>
+                <li><a href="{% url 'main:index' %}#blog">{% trans 'Blog' %}</a></li>
+                <li><a href="{% url 'main:index' %}#contact-anchor">{% trans 'Contact' %}</a></li>
                 {% if user.is_authenticated %}
-                    <li><a href="/profile/" style="font-weight: bold;">Profile</a></li>
-                    <li><a href="/logout/" style="font-weight: bold;">Logout</a></li>
+                    <li><a href="/profile/" style="font-weight: bold;">{% trans 'Profile' %}</a></li>
+                    <li><a href="/logout/" style="font-weight: bold;">{% trans 'Logout' %}</a></li>
                 {% else %}
-                    <li><a href="/login/" style="font-weight: bold;">Login</a></li>
-                    <li><a href="/registration/" style="font-weight: bold;">Sign up</a></li>
+                    <li><a href="/login/" style="font-weight: bold;">{% trans 'Login' %}</a></li>
+                    <li><a href="/registration/" style="font-weight: bold;">{% trans 'Signup' %}</a></li>
                 {% endif %}
             </ul>
-            <button class="nav-toggler">
-                <span></span>
-            </button>
+            <form id="language-form" class="language-selector" action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                <select name="language" onchange="this.form.submit()">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% for lang in LANGUAGES %}
+                        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                            {{ lang.1 }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </form>
+            
         </nav>
     </div>
 </div>
+
+<style>
+    .language-selector {
+        margin-left: 30px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('language-form');
+        var select = form.querySelector('select');
+
+        select.addEventListener('change', function () {
+            form.submit();
+        });
+    });
+</script>

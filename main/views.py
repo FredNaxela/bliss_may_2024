@@ -78,7 +78,7 @@ class IndexView(TemplateView):
             session_form = SessionForm(request.POST)
             if session_form.is_valid():
                 new_session = session_form.save(commit=False)
-                new_session.user = request.user  # Присваиваем текущего пользователя
+                new_session.user = request.user
                 new_session.save()
                 messages.success(request, 'You have signed up for a session!', extra_tags='session')
                 return redirect('main:index')

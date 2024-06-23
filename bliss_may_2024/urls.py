@@ -20,11 +20,15 @@ from bliss_may_2024 import settings
 from django.conf.urls.static import static
 from account.views import RegistrationView, MyLoginView, logout_view, profile_view
 from account import views
+from django.conf.urls.i18n import i18n_patterns
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('i18n/', include('django.conf.urls.i18n')),
+]
 
+urlpatterns += i18n_patterns(
     path('', include('main.urls')),
 
     path('registration/', RegistrationView.as_view(), name='registration'),
@@ -33,7 +37,7 @@ urlpatterns = [
     path('profile/', profile_view, name='profile'),
     path('account/', include('django.contrib.auth.urls')),
     path('update-profile/', views.profile_view, name='update_profile'),
-]
+)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,3 +1,4 @@
+{% load i18n %}
 <footer>
     <div class="footer">
         <div class="container">
@@ -6,16 +7,18 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="hedingh3 text_align_left">
-                                <h3>About</h3>
-                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco incididunt.</p>
+                                <h3>{% trans 'About' %}</h3>
+                                <p>{% blocktrans %} Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
+                                    Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco incididunt {% endblocktrans %}.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="hedingh3 text_align_left">
-                                <h3>Blog</h3>
-                                <p>Which don't look even slightly believable. If you are going to use a passage
-                                    of Lorem Ipsum, you need to be sure there isn't anythin.</p>
+                                <h3>{% trans 'Blog' %}</h3>
+                                <p>{% blocktrans %} Which don't look even slightly believable. If you are going to use 
+                                    a passage of Lorem Ipsum, you need to be sure there isn't 
+                                    anythin {% endblocktrans %}.</p>
                             </div>
                         </div>
                     </div>
@@ -24,19 +27,19 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="hedingh3 text_align_left">
-                                <h3>Menu</h3>
+                                <h3>{% trans 'Menu' %}</h3>
                                 <ul class="menu_footer">
-                                    <li><a href="{% url 'main:index' %}">Home</a></li>
-                                    <li><a href="{% url 'main:index' %}#services">Services</a></li>
-                                    <li><a href="{% url 'main:index' %}#prices">Prices</a></li>
-                                    <li><a href="{% url 'main:index' %}#about-anchor">About</a></li>
-                                    <li><a href="{% url 'main:index' %}#blog">Blog</a></li>
+                                    <li><a href="{% url 'main:index' %}">{% trans 'Home' %}</a></li>
+                                    <li><a href="{% url 'main:index' %}#services">{% trans 'Services' %}</a></li>
+                                    <li><a href="{% url 'main:index' %}#prices">{% trans 'Prices' %}</a></li>
+                                    <li><a href="{% url 'main:index' %}#about-anchor">{% trans 'About' %}</a></li>
+                                    <li><a href="{% url 'main:index' %}#blog">{% trans 'Blog' %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="hedingh3  text_align_left">
-                                <h3>Contacts</h3>
+                                <h3>{% trans 'Contacts' %}</h3>
                                 <ul class="top_infomation">
                                     <li><i class="fa fa-phone" aria-hidden="true"></i>
                                         +01 1234567890

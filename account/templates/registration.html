@@ -1,4 +1,5 @@
 {% extends 'index.html' %}
+{% load i18n %}
 
 {% block content %}
     <div id="contact" class="appointment">
@@ -6,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage text_align_center">
-                        <h2>Registration</h2>
+                        <h2>{% trans 'Registration' %}</h2>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -24,7 +25,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 text_align_center">
-                            <button class="send_btn" type="submit">Sign up</button>
+                            <button class="send_btn" type="submit">{% trans 'Sign up' %}</button>
                         </div>
                     </form>
                 </div>

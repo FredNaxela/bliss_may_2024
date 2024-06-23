@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Banner, Services, About, Price, Reviews, Blog, Contact, Session, Category
 from django.utils.safestring import mark_safe
-
+from modeltranslation.admin import TranslationAdmin
 
 # Register your models here.
 
@@ -10,14 +10,14 @@ admin.site.register(Session)
 
 
 @admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslationAdmin):
     list_display = ('name', 'title', 'description','sort')
     list_editable = ('sort',)
     list_filter = ('sort',)
 
 
 @admin.register(Banner)
-class BannerAdmin(admin.ModelAdmin):
+class BannerAdmin(TranslationAdmin):
     list_display = ('image_src_tag1', 'image_src_tag2', 'description', 'sort')
     list_editable = ('sort',)
     list_filter = ('sort',)
@@ -32,7 +32,7 @@ class BannerAdmin(admin.ModelAdmin):
 
 
 @admin.register(Services)
-class ServicesAdmin(admin.ModelAdmin):
+class ServicesAdmin(TranslationAdmin):
     list_display = ('image_src_tag', 'name', 'description', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
@@ -46,7 +46,7 @@ class ServicesAdmin(admin.ModelAdmin):
 
 
 @admin.register(Price)
-class PriceAdmin(admin.ModelAdmin):
+class PriceAdmin(TranslationAdmin):
     list_display = ('name', 'description', 'price', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
@@ -54,7 +54,7 @@ class PriceAdmin(admin.ModelAdmin):
 
 
 @admin.register(Blog)
-class BlogAdmin(admin.ModelAdmin):
+class BlogAdmin(TranslationAdmin):
     list_display = ('image_src_tag', 'name', 'description', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
@@ -68,7 +68,7 @@ class BlogAdmin(admin.ModelAdmin):
 
 
 @admin.register(About)
-class AboutAdmin(admin.ModelAdmin):
+class AboutAdmin(TranslationAdmin):
     list_display = ('image_src_tag', 'name', 'description', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
@@ -82,7 +82,7 @@ class AboutAdmin(admin.ModelAdmin):
 
 
 @admin.register(Reviews)
-class ReviewsAdmin(admin.ModelAdmin):
+class ReviewsAdmin(TranslationAdmin):
     list_display = ('image_src_tag', 'name', 'description', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
