@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Banner, Services, About, Price, Reviews, Blog, Contact, Session
+from .models import Banner, Services, About, Price, Reviews, Blog, Contact, Session, Category
 from django.utils.safestring import mark_safe
 
 
@@ -7,6 +7,13 @@ from django.utils.safestring import mark_safe
 
 admin.site.register(Contact)
 admin.site.register(Session)
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'title', 'description','sort')
+    list_editable = ('sort',)
+    list_filter = ('sort',)
 
 
 @admin.register(Banner)
@@ -26,7 +33,7 @@ class BannerAdmin(admin.ModelAdmin):
 
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
-    list_display = ('image_src_tag', 'name', 'description', 'category', 'sort')
+    list_display = ('image_src_tag', 'name', 'description', 'sort')
     list_editable = ('sort',)
     search_fields = ('name',)
     list_filter = ('sort',)

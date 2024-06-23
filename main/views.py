@@ -1,10 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Banner, Services, About, Price, Reviews, Blog, Session
+from .models import Banner, Services, About, Price, Reviews, Blog, Category
 from .forms import ContactForm, SessionForm
 from django.views.generic import TemplateView
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
 
 
 # Create your views here.
@@ -33,6 +31,17 @@ class IndexView(TemplateView):
         blog = Blog.objects.all()
         about = About.objects.all()
         reviews = Reviews.objects.all()
+        categories = Category.objects.all()
+
+        def get_category_by_name(name):
+            return Category.objects.filter(name=name).first()
+
+        category_blog = get_category_by_name('Blog')
+        category_price = get_category_by_name('Price')
+        category_reviews = get_category_by_name('Reviews')
+        category_services = get_category_by_name('Services')
+        category_session = get_category_by_name('Session')
+        category_contact = get_category_by_name('Contact')
 
         context['banner'] = banner
         context['services'] = services
@@ -42,6 +51,13 @@ class IndexView(TemplateView):
         context['reviews'] = reviews
         context['contact_form'] = contact_form
         context['session_form'] = session_form
+        context['categories'] = categories
+        context['category_blog'] = category_blog
+        context['category_price'] = category_price
+        context['category_reviews'] = category_reviews
+        context['category_services'] = category_services
+        context['category_session'] = category_session
+        context['category_contact'] = category_contact
 
         return context
 
@@ -61,7 +77,9 @@ class IndexView(TemplateView):
         elif 'submit_session_form' in request.POST:
             session_form = SessionForm(request.POST)
             if session_form.is_valid():
-                session_form.save()
+                new_session = session_form.save(commit=False)
+                new_session.user = request.user  # Присваиваем текущего пользователя
+                new_session.save()
                 messages.success(request, 'You have signed up for a session!', extra_tags='session')
                 return redirect('main:index')
             else:

@@ -1,8 +1,26 @@
 from django.db import models
 from django.core.validators import RegexValidator
+from django.contrib.auth import get_user_model
 
 
 # Create your models here.
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=25)
+    title = models.CharField(max_length=50)
+    description = models.TextField(max_length=255, blank=True, null=True)
+    sort = models.PositiveSmallIntegerField()
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = '9.Categories'
+        ordering = ['sort']
+
+
 class Banner(models.Model):
     description = models.TextField()
     image1 = models.ImageField(upload_to='banner/', blank=True, null=True)
@@ -20,7 +38,6 @@ class Services(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='services/', blank=True, null=True)
     sort = models.PositiveSmallIntegerField()
-    category = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -115,6 +132,7 @@ class Contact(models.Model):
 
 
 class Session(models.Model):
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     phone_regex = RegexValidator(regex=r'^\+?(380)?\d{9,15}$',
                                  message="Number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
 

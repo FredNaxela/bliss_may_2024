@@ -45,7 +45,7 @@ class SessionForm(forms.ModelForm):
     MASSAGE_SPA_CHOICES = [
         ('massage', 'Massage'),
         ('spa', 'Spa'),
-        ('massage_and_spa', 'Massage & Spa')
+        ('massage+spa', 'Massage & Spa')
     ]
 
     procedure = forms.ChoiceField(

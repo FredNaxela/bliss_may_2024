@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <form method="post" >
+                    <form method="post">
                         {% csrf_token %}
                         <div><strong>Username:</strong> {{ user.username }}</div>
                         <br>
@@ -35,7 +35,7 @@
                         {% if user.session_set.count > 0 %}
                             <ul>
                                 {% for session in user.session_set.all %}
-                                    <li>{{ session.date }}</li>
+                                    <li>{{ session.procedure }} - {{ session.date }}, {{ session.time }}</li>
                                 {% endfor %}
                             </ul>
                         {% else %}
