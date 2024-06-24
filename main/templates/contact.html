@@ -1,3 +1,4 @@
+{% load i18n %}
 <a id="contact-anchor"></a>
 <div style="margin-bottom: 70px;"></div>
 <div id="contact" class="appointment">
@@ -32,7 +33,8 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" name="submit_contact_form" class="send_btn">Send Now</button>
+                            <button type="submit" name="submit_contact_form"
+                                    class="send_btn">{% trans 'Send Now' %}</button>
                         </div>
                     </div>
                 </form>

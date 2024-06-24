@@ -19,7 +19,7 @@ class PriceTranslationOptions(TranslationOptions):
 
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
-    fields = ('name', 'description')
+    fields = ('name', 'description', 'date')
 
 
 @register(About)

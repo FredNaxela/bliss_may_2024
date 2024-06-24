@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
 DATABASES_URL = os.environ.get('DATABASES_URL')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['os.environ.get("ALLOWED_HOSTS")', '*']
 
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'bliss_may_2024.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

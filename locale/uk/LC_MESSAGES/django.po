@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 17:32+0000\n"
+"POT-Creation-Date: 2024-06-23 13:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,7 @@ msgstr ""
 "11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
 #: account/templates/login.html:26 account/templates/login.html:44
 #: templates/includes/nav.html:15
 msgid "Login"
@@ -43,7 +44,7 @@ msgstr "Телефон"
 
 #: account/templates/profile.html:27
 msgid "Email:"
-msgstr "Імейл"
+msgstr "Пошта"
 
 #: account/templates/profile.html:30
 msgid "Update"
@@ -65,6 +66,14 @@ msgstr "Реєстрація"
 msgid "Sign up"
 msgstr "Зареєструватися"
 
+#: main/templates/contact.html:37
+msgid "Send Now"
+msgstr "Відправити"
+
+#: main/templates/session.html:33
+msgid "Book Now"
+msgstr "Забронювати"
+
 #: templates/includes/footer.html:10 templates/includes/footer.html:35
 #: templates/includes/nav.html:8
 msgid "About"
@@ -76,7 +85,9 @@ msgid ""
 "                                    Ut enim ad minim veniam, quis nostrud "
 "exercitation\n"
 "                                    ullamco incididunt "
-msgstr "Афиаифаиваива ивави  вифв фифв ф фивфив. Фаиаиваив парапавпввапвв вапва  ива и. иваиваива ииваива иаиваива и"
+msgstr ""
+"Афиаифаиваива ивави  вифв фифв ф фивфив. Фаиаиваив парапавпввапвв вапва  ива "
+"и. иваиваива ииваива иаиваива и"
 
 #: templates/includes/footer.html:18 templates/includes/footer.html:36
 #: templates/includes/nav.html:9
@@ -89,7 +100,9 @@ msgid ""
 "                                    a passage of Lorem Ipsum, you need to be "
 "sure there isn't \n"
 "                                    anythin "
-msgstr "Цфиаивави иаукау цуа цкуцк. иааиваива иаива цифф ьвлдижпджи, иатлиоталоитлаилвпалиіі фив ффавили виа"
+msgstr ""
+"Цфиаивави иаукау цуа цкуцк. иааиваива иаива цифф ьвлдижпджи, "
+"иатлиоталоитлаилвпалиіі фив ффавили виа"
 
 #: templates/includes/footer.html:30
 msgid "Menu"

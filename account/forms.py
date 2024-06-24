@@ -3,7 +3,6 @@ from .models import CustomUser
 from django.core.validators import RegexValidator
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):

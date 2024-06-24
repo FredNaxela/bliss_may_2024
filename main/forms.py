@@ -50,20 +50,20 @@ class SessionForm(forms.ModelForm):
 
     procedure = forms.ChoiceField(
         choices=MASSAGE_SPA_CHOICES,
-        widget=forms.Select(attrs={'class': 'form-control', 'placeholder': 'Select Procedure'}),
+        widget=forms.Select(attrs={'class': 'form-control custom-select', 'placeholder': 'Select Procedure'}),
     )
 
     class Meta:
         model = Session
-        fields = ['name', 'phone', 'email', 'procedure', 'date', 'time', 'message']
+        fields = ['name', 'phone', 'email', 'message', 'date', 'time', 'procedure']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Your name'}),
             'email': forms.EmailInput(attrs={'class': 'form_control', 'placeholder': 'Email'}),
             'phone': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Phone Number'}),
-            'time': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Time'}),
+            'time': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Time format: hh:mm'}),
             'date': forms.TextInput(attrs={'class': 'form_control', 'id': 'my_date_picker',
                                            'placeholder': 'Select Date'}),
-            'message': forms.Textarea(attrs={'class': 'textarea', 'placeholder': 'Message'}),
+            'message': forms.TextInput(attrs={'class': 'form_control', 'placeholder': 'Message(optional)'}),
         }
 
         labels = {
@@ -78,6 +78,7 @@ class SessionForm(forms.ModelForm):
 
         help_texts = {
             'phone': 'Phone number must be entered in the format: +999999999. Up to 15 digits allowed.',
+
         }
 
         error_messages = {
