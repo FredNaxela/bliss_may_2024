@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from bliss_may_2024 import settings
 from django.conf.urls.static import static
-from account.views import RegistrationView, MyLoginView, logout_view, profile_view
+from account.views import RegistrationView, MyLoginView, logout_view, profile_view, cancel_session
 from account import views
 from django.conf.urls.i18n import i18n_patterns
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
@@ -37,6 +38,11 @@ urlpatterns += i18n_patterns(
     path('profile/', profile_view, name='profile'),
     path('account/', include('django.contrib.auth.urls')),
     path('update-profile/', views.profile_view, name='update_profile'),
+    path('cancel-session/<int:session_id>/', cancel_session, name='cancel_session'),
+    path('password-reset/', auth_views.PasswordResetView.as_view(template_name='password_reset_request.html'), name='password_reset'),
+    path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='password_reset_done.html'), name='password_reset_done'),
+    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='password_reset_confirm.html'), name='password_reset_confirm'),
+    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'), name='password_reset_complete'),
 )
 
 if settings.DEBUG:

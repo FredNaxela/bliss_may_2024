@@ -9,12 +9,24 @@
             width: 20%;
             margin-top: 7px;
         }
+
         .login-form input[type="text"],
         .login-form input[type="password"] {
             width: 60%;
         }
+
         .login-form .form-text {
             margin-left: 30%;
+        }
+
+        .centered {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password-link {
+            display: block;
+            margin-top: 10px;
         }
     </style>
 
@@ -40,8 +52,10 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 centered">
                             <button class="send_btn" type="submit">{% trans 'Login' %}</button>
+                            <a href="{% url 'password_reset' %}"
+                               class="forgot-password-link">{% trans 'Forgot your password?' %}</a>
                         </div>
                     </form>
                 </div>

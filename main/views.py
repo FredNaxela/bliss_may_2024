@@ -3,6 +3,8 @@ from django.contrib import messages
 from .models import Banner, Services, About, Price, Reviews, Blog, Category
 from .forms import ContactForm, SessionForm
 from django.views.generic import TemplateView
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 # Create your views here.
@@ -80,6 +82,15 @@ class IndexView(TemplateView):
                 new_session = session_form.save(commit=False)
                 new_session.user = request.user
                 new_session.save()
+
+                send_mail(
+                    'Register for a session',
+                    f'You have successfully registered for the session.: {new_session.procedure} - '
+                    f'{new_session.date}, {new_session.time}',
+                    settings.EMAIL_HOST_USER,
+                    [request.user.email],
+                    fail_silently=True,
+                )
                 messages.success(request, 'You have signed up for a session!', extra_tags='session')
                 return redirect('main:index')
             else:

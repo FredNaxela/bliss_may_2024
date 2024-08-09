@@ -1,3 +1,4 @@
+{% load i18n %}
 <div class="slider_main">
     <div id="banner1" class="carousel slide">
         <ol class="carousel-indicators">
@@ -16,8 +17,8 @@
                                     <div class="creative">
                                         <h1>Spa <br>Center </h1>
                                         <p>{{ item.description }}</p>
-                                        <a class="read_more" href="#session">Book a session</a>
-                                        <a class="read_more" href="#contact-anchor">Contact us</a>
+                                        <a class="read_more" href="#session">{% trans 'Book a session' %}</a>
+                                        <a class="read_more" href="#contact-anchor">{% trans 'Contact us' %}</a>
                                     </div>
                                 </div>
                                 <div class="col-md-7">
